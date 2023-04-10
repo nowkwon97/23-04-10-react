@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// <div></div>대신 Fragment기능 사용
+// import { Fragment } from 'react';
+// <></>로도 사용 가능하다.
+
 
 function App() {
+  const name = '리액트';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <h1>마 {name} 잘 지내나!</h1>
+      <h2>잘 작동하니?</h2>
+    </>
+  )
 }
 
 export default App;
