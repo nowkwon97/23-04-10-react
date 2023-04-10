@@ -4,16 +4,8 @@
 
 
 function App() {
-  const name = '리액트';
-  return (
-    <>
-    {name === '리액트' ? (
-      <h1>리액트 입니다.</h1>
-    ) : (
-      <h2>리액트가 아닙니다.</h2>
-    )}
-    </>
-  )
+  const name = undefined;
+  return <div>{name || 'undefined 시 보이는 문구'}</div>;
 }
 
 export default App;
